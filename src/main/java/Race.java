@@ -1,7 +1,11 @@
 public class Race {
 
-    String leader = "";
-    int distance = 0;
+    private String leader = "";
+    private int distance = 0;
+
+    public String getLeader() {
+        return leader;
+    }
 
     public void addRacer(String name, int speed) {
         int newDistance = speed * 24;

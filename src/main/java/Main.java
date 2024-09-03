@@ -27,8 +27,8 @@ public class Main {
                 }
             }
             Car car = new Car(carName, carSpeed);
-            race.newLeader(car.name, car.speed);
+            race.addRacer(car.getName(), car.getSpeed());
         }
-        System.out.println("Самая быстрая машина: " + race.leader);
+        System.out.println("Самая быстрая машина: " + race.getLeader());
     }
 }
